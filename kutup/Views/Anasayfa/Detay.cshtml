@@ -1,0 +1,93 @@
+﻿@model Kitap;
+<div class="container">
+    <div class="row" style="padding:3rem 8rem 3rem 8rem;">
+
+        <div class="col-6" style="width:50%;">
+            <div class="img">
+                <img src="/images/Kucukprens.jpg" alt="" style="display: block;
+    width: 100%;
+    height: 10%;
+    object-fit: cover;">
+            </div>
+        </div>
+        <div class="col-6" style="width:50%;">
+            <ul class="list-group" >
+                <li class="list-group-item">
+                    <div class="title d-flex">
+                        <h1 style="font-weight:bold; margin-bottom:0.5rem;">Kitap Adı:</h1>
+                        <h1 style="margin-top:0;">@Model.KitapAdi</h1>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="price d-flex">
+                        <h1 style="font-weight:bold; margin-bottom:0.5rem;">Kitap ISBN No:</h1>
+                        <h1 style="margin-top:0;">@Model.ISBN</h1>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="price d-flex">
+                        <h1 style="font-weight:bold; margin-bottom:0.5rem;">Kitap Hakkında:</h1>
+                        <h1 style="margin-top:0;">@Model.Hakkında</h1>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="price d-flex">
+                        <h1 style="font-weight:bold; margin-bottom:0.5rem;">Kitap Adeti:</h1>
+                        <h1 style="margin-top:0;">@Model.Adet</h1>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="price d-flex">
+                        <h1 style="font-weight:bold; margin-bottom:0.5rem;">Kitap Eklenme Tarihi:</h1>
+                        <h1 style="margin-top:0;">@Model.EklenmeTarihi</h1>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="lists">
+                        <div class="ktg d-flex">
+                            <h1 style="font-weight:bold; margin-bottom:0.5rem;">Kitabın Kategorileri:</h1>
+                            @foreach (var item in Model.Kategoriler)
+                            {
+                                <ul>
+                                    <li>@item.KategoriAdi</li>
+                                </ul>
+                            }
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="ktg d-flex">
+                        <h1 style="font-weight:bold; margin-bottom:0.5rem;">Kitabın Yazarı:</h1>
+                        @foreach (var item in Model.Yazarlar)
+                        {
+                            <ul>
+                                <li>@item.AdSoyad</li>
+                            </ul>
+                        }
+                    </div>
+                </li>
+            </ul>
+            <div class="container justify-content-center mt-5 border-left border-right">
+                <h4>@Model.Yorumlar.Count() adet yorum</h4>
+                <form>
+                    <div class="d-flex justify-content-center pt-3 pb-2"> <input type="text" name="text" placeholder="Yorumunuz" class="form-control addtxt"> </div>
+                    <button type="button" class="btn btn-secondary">Gönder</button>
+                </form>
+                @foreach (var comment in Model.Yorumlar)
+                    {
+                <div class="d-flex  py-2 ">
+                    <div class="second py-2 px-2 bg-white ">
+                            <span class="text1">@comment.Text</span>
+                        <div class="d-flex justify-content-between py-1 pt-2">
+                                <div><img src="https://i.imgur.com/AgAC1Is.jpg" width="18"><span class="text2">@comment.Kullanıcı.UserName</span></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                }
+                
+            </div>
+        </div>
+    </div>
+
+</div>

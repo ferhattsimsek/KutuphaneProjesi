@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Kullanıcı>
+
+<h2>Kurs Listesi</h2>
+<a href="/Kullanıcı/Create" class="btn btn-primary">Kullanıcı Ekle</a>
+<hr>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th style="width: 150px;">Kullanıcı Adı</th>
+            <th>Kullanıcı Soyadı</th>
+            <th>Kullanıcı Email</th>
+            <th>Kullanıcı Telefon Numarası</th>
+            <th>Kullanıcı T.C. Kimlik Numarası</th>
+
+            <th style="width: 150px;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.UserName</td>
+                <td>@item.UserLastName</td>
+                <td>@item.Email</td>
+                <td>@item.Tel</td>
+                <td>@item.KullanıcıId</td>
+ 
+
+                
+                <td>
+                    <form method="post" asp-action="Delete" asp-route-id="@item.KullanıcıId">
+                        <a asp-action="Edit" asp-route-id="@item.KullanıcıId" class="btn btn-sm btn-primary">Edit</a>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

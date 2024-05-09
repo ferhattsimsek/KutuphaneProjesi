@@ -1,0 +1,23 @@
+﻿
+@model IEnumerable<Kitap>
+
+@foreach (var item in Model){
+
+    <div class="crop col-3">
+        <div class="img">
+            <img src="/images/Kucukprens.jpg" alt=""><a onclick="favoritemanage(this)"> <i class="fa-regular fa-heart add-favorite-btn"></i> </a>
+        </div>
+        <div class="title">
+            <h1 style="font-weight:bold; margin-right:1rem;">Kitap Adı:  </h1>
+            <h1>@item.KitapAdi </h1>
+        </div>
+        <div class="price">
+            <h1 style ="font-weight:bold; margin-right:1rem;">Kitap ISBN No: </h1>
+
+            <h1>@item.ISBN</h1>
+        </div>
+        <form class="buton" asp-action="Detay" asp-route-id="@item.ISBN">
+            <button  >Detay</button>
+        </form>
+    </div>
+}

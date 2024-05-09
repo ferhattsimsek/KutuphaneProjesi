@@ -1,0 +1,19 @@
+﻿@model Emanet
+
+<h2>Kitap Verme</h2>
+<hr>
+<form asp-controller="Emanet" asp-action="Create" method="post" class="mb-5">
+
+    <div class="mb-3">
+        <label asp-for="KitapId" class="form-label">Kitap ISBN Numarası</label>
+        <input asp-for="KitapId" type="number" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="KullanıcıId" class="form-label">Kullanıcı T.C. Numarası</label>
+        <input asp-for="KullanıcıId" class="form-control">
+    </div>
+   
+
+
+    <button type="submit" class="btn btn-secondary">Kaydet</button>
+</form>

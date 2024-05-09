@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Emanet>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kitap Listesi</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+
+
+
+            .table th, .table td {
+                text-align: center;
+            }
+
+            li {
+                list-style-type: none;
+                margin-left: 0;
+                padding-left: 0;
+            }
+
+            .btn-group {
+                margin-bottom: 10px;
+            }
+
+            form {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 150px;
+            }
+
+            .btn-group > a, .btn-group > button {
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h2>Emanet Listesi</h2>
+
+        <div class="btn-group">
+            <a href="/Emanet/Create" class="btn btn-primary">Kitap Emanet Et</a>
+        </div>
+
+        <hr>
+
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Kitap Adı</th>
+                    <th>Üye Adı</th>
+                    <th>Alma Tarihi</th>
+                    <th>Getireceği Tarih</th>
+                    <th>Güncelle</th>
+                    <th>Getirildi Olarak İşaretle</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.kitap.KitapAdi</td>
+                        <td>@item.kullanıcı.UserName</td>
+                        <td>@item.AlisTarihi</td>
+                        <td>@item.GetirecegiTarih</td>
+                        
+                       <td><a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-info">Güncelle</a></td>
+
+
+                        
+                        <td>
+                        <a asp-action="EmanetVer" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Getirme işlemi yap</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

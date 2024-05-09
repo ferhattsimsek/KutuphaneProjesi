@@ -1,0 +1,21 @@
+﻿@model Yazar
+
+<h2>Yazar Düzenle</h2>
+<hr>
+<form asp-controller="Yazar" asp-action="Edit" method="post">
+    <div class="mb-3">
+        <label asp-for="YazarAdi" class="form-label">Yazar Adı</label>
+        <input asp-for="YazarAdi" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="YazarSoyadi" class="form-label">Yazar Soyadı </label>
+        <input asp-for="YazarSoyadi" class="form-control">
+    </div>
+
+
+    <input asp-for="YazarId" class="form-control" type="hidden">
+
+
+    <button type="submit" class="btn btn-secondary">Kaydet</button>
+
+</form>

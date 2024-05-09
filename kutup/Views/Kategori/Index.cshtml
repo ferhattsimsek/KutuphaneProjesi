@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Kategori>
+
+<h2>Kategori Listesi</h2>
+<a href="/Kategori/Create" class="btn btn-primary">Kategori Ekle</a>
+<hr>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th style="width: 150px;">Kategori İd</th>
+            <th>Kategori Adı</th>
+            <th>Kitap Sayısı</th>
+            <th style="width: 150px;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.KategoriId</td>
+                <td>@item.KategoriAdi</td>
+                <td>5</td>
+                <td>
+                    <form method="post" asp-action="Delete" asp-route-id="@item.KategoriId">
+                    <a asp-action="Edit" asp-route-id="@item.KategoriId" class="btn btn-sm btn-primary">Edit</a>
+                    <button   class="btn btn-sm btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\BIG\\Desktop\\kutup\\kutup\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF3321C-B162-42EF-8D81-151CCAEE5CD0}|kutup.csproj|c:\\users\\big\\desktop\\kutup\\kutup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF3321C-B162-42EF-8D81-151CCAEE5CD0}|kutup.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF3321C-B162-42EF-8D81-151CCAEE5CD0}|kutup.csproj|c:\\users\\big\\desktop\\kutup\\kutup\\views\\yazar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CF3321C-B162-42EF-8D81-151CCAEE5CD0}|kutup.csproj|solutionrelative:views\\yazar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF3321C-B162-42EF-8D81-151CCAEE5CD0}|kutup.csproj|c:\\users\\big\\desktop\\kutup\\kutup\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CF3321C-B162-42EF-8D81-151CCAEE5CD0}|kutup.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF3321C-B162-42EF-8D81-151CCAEE5CD0}|kutup.csproj|c:\\users\\big\\desktop\\kutup\\kutup\\controllers\\yazarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF3321C-B162-42EF-8D81-151CCAEE5CD0}|kutup.csproj|solutionrelative:controllers\\yazarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\BIG\\Desktop\\kutup\\kutup\\Views\\Yazar\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Yazar\\Index.cshtml",
+              "ToolTip": "C:\\Users\\BIG\\Desktop\\kutup\\kutup\\Views\\Yazar\\Index.cshtml",
+              "RelativeToolTip": "Views\\Yazar\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T22:35:16.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\BIG\\Desktop\\kutup\\kutup\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\BIG\\Desktop\\kutup\\kutup\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T22:26:58.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "YazarController.cs",
+              "DocumentMoniker": "C:\\Users\\BIG\\Desktop\\kutup\\kutup\\Controllers\\YazarController.cs",
+              "RelativeDocumentMoniker": "Controllers\\YazarController.cs",
+              "ToolTip": "C:\\Users\\BIG\\Desktop\\kutup\\kutup\\Controllers\\YazarController.cs",
+              "RelativeToolTip": "Controllers\\YazarController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T17:18:07.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\BIG\\Desktop\\kutup\\kutup\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\BIG\\Desktop\\kutup\\kutup\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAAAGAAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-01T17:28:11.753Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

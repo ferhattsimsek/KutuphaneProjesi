@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Yazar>
+
+<h2>Yazar Listesi</h2>
+<a href="/Yazar/Create" class="btn btn-primary">Yazar Ekle</a>
+<hr>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th style="width: 150px;">Yazar İd</th>
+            <th>Yazar Adı</th>
+            <th>Yazar Soyadı</th>
+            <th>Yazar Kitap Sayısı</th>
+
+            
+            <th style="width: 150px;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.YazarId</td>
+                <td>@item.YazarAdi</td>
+                <td>@item.YazarSoyadi</td>
+
+                <td>5</td>
+                <td>
+                    <form method="post" asp-action="Delete" asp-route-id="@item.YazarId">
+                        <a asp-action="Edit" asp-route-id="@item.YazarId" class="btn btn-sm btn-primary">Edit</a>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

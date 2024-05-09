@@ -1,0 +1,64 @@
+﻿@model Kitap
+
+<h2>Kitap Ekle</h2>
+<hr>
+<form asp-controller="Kitap" asp-action="Create" method="post" class="mb-5">
+    <div class="mb-3">
+        <label asp-for="ISBN" class="form-label">ISBN Numarası</label>
+        <input asp-for="ISBN" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="KitapAdi" class="form-label">Kitap Adı</label>
+        <input asp-for="KitapAdi" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Hakkında" class="form-label">Kitap İçeriği</label>
+        <textarea asp-for="Hakkında" class="form-control"></textarea>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Adet" class="form-label">Adet</label>
+        <input asp-for="Adet" type="number" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label  class="form-label">Tür Seçiniz</label>
+        <div>
+            @foreach (var tür in ViewBag.Kategoriler)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" name="KategoriIds" type="checkbox" value="@tür.KategoriId" id="tür_@tür.KategoriId">
+                    <label class="form-check-label" for="KategoriIds">
+                        @tür.KategoriAdi
+                    </label>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Yazar Seçiniz</label>
+        <div class="input-group">
+            <select class="form-select" aria-label="Default select example" name="YazarIds" >
+                <option selected  value="">Yazar Seçimi</option>
+                @foreach (var yaz in ViewBag.Yazarlar)
+                {
+                    <option  value="@yaz.YazarId" name="YazarIds">@yaz.YazarAdi</option>
+                }
+            </select>
+            <button type="button" class="btn btn-primary" id="addSelect">+</button>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-secondary">Kaydet</button>
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        
+        $("#addSelect").click(function () {
+            var clone = $("select.form-select").last().clone();
+            clone.val('');  
+            $("select.form-select").last().after(clone);
+        });
+    });
+</script>

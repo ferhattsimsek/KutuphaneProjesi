@@ -1,0 +1,17 @@
+﻿@model Kategori
+
+<h2>Kategori Düzenle</h2>
+<hr>
+<form asp-controller="Kategori" asp-action="Edit" method="post">
+    <div class="mb-3">
+        <label asp-for="KategoriAdi" class="form-label">Kategori Adı</label>
+        <input asp-for="KategoriAdi" class="form-control">
+    </div>
+    
+       
+        <input asp-for="KategoriId"  class="form-control" type="hidden">
+  
+
+    <button type="submit" class="btn btn-secondary">Kaydet</button>
+
+</form>

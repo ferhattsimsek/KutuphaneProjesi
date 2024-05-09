@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = kutup
+build_property.RootNamespace = kutup
+build_property.ProjectDir = C:\Users\İlayda Nur Ceylan\OneDrive\Masaüstü\kutup\kutup\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\İlayda Nur Ceylan\OneDrive\Masaüstü\kutup\kutup
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Kategori/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Kategori/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Kategori/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Kitap/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Kitap/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Kitap/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Yazar/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWF6YXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Yazar/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWF6YXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Yazar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWF6YXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/İlayda Nur Ceylan/OneDrive/Masaüstü/kutup/kutup/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-j6lsc25oh1

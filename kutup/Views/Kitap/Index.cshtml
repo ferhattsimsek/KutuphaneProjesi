@@ -1,0 +1,105 @@
+﻿
+
+
+@model IEnumerable<Kitap>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Listesi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        
+
+
+        .table th, .table td {
+            text-align: center;
+        }
+
+        li {
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        .btn-group {
+            margin-bottom: 10px;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 150px;
+        }
+
+        .btn-group > a, .btn-group > button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Kitap Listesi</h2>
+
+    <div class="btn-group">
+        <a href="/Kitap/Create" class="btn btn-primary">Kitap Ekle</a>
+    </div>
+
+    <hr>
+
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th style="width: 150px;">ISBN No</th>
+                <th>Kitap Adı</th>
+                <th>Eklenme Tarihi</th>
+                <th>Adet</th>
+                <th>Kitabın Türü</th>
+                <th>Kitabın Yazarı</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ISBN</td>
+                    <td>@item.KitapAdi</td>
+                    <td>@item.EklenmeTarihi</td>
+                    <td>@item.Adet</td>
+                    <td>
+                        <ul>
+                            @foreach (var i in item.Kategoriler)
+                            {
+                                <li>@i.KategoriAdi</li>
+                            }
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            @foreach (var i in item.Yazarlar)
+                            {
+                                <li>@i.AdSoyad</li>
+                            }
+                        </ul>
+                    </td>
+                    <td>
+                        <form method="post" asp-action="Delete" asp-route-id="@item.ISBN">
+                            <a asp-action="Edit" asp-route-id="@item.ISBN" class="btn btn-sm btn-primary">Edit</a>
+                            <a asp-action="Edit" asp-route-id="@item.ISBN" class="btn btn-sm btn-info">Detay</a>
+                            <button class="btn btn-sm btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
